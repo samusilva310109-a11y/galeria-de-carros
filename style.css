@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/modelou-o-fundo-com-um-efeito-grunge.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto auto auto;
+    width: 100%;
+    
+}
+h1{
+    display: flex;
+}
+main{
+    text-align: center;
+    vertical-align: 100lvh;
+    color: crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}   
+header{
+    background-color: rgb(255, 255, 255);
+    padding-inline: 100%;
+    min-width: 100%;
+    margin-bottom: 25px;
+    vertical-align: 100px;
+     
+}
+.linha1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.linha1 img{/*aqui define a borda e espaçamento entre as imagens das linhas (que é o pai)*/
+    border: solid 5px white; /* tipo de borda; largura; cor*/
+    border-radius: 10px;
+    margin: auto 10px auto 10px;
+}
+.linha2{
+    margin-bottom: 10px;
+    display: flex;
+}
+.linha2 img{
+    border: solid 5px white;
+    border-radius: 10px;
+    margin: auto 10px auto 10px;
+
+}
+.linha3{
+    display: flex;
+}
+.linha3 img{
+    border: solid 5px white;
+    border-radius: 10px;
+    margin: auto 10px auto 10px; /*top left bottom right*/
+}
+#Omega{
+    max-height: 180px;
+}
+.imagens{
+    height: 200px;
+    height: 100vh;
+    margin-top: 100px;
+    
+}
+.imagens img{
+    transition: transform 0.3s;
+    filter: grayscale(100%);
+    object-fit: cover; /*Define a largura e altura da imagem dentro do container. Neste caso "cover" a imagem ocupa todo o container*/
+    object-position: center top; /*centraliza na horizontal e vertical dentro do container, evitando que agum conteúdo da imagem seja cortado*/
+
+}
+
+.imagens img:hover{
+    transform: scale(1.1);
+    border: solid 5px red;
+    transition: 2s;
+    filter:grayscale(0);
+    
+}    
+p{
+    color: black;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+    background-color: white;
+    margin: auto 100px auto 100px;
+    border: outset 2px black;
+}
