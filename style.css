@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
 body{
     background-image: url(./img/modelou-o-fundo-com-um-efeito-grunge.jpg) ;
     background-repeat: no-repeat;
@@ -16,23 +19,25 @@ body{
     width: 100%;
     
 }
-h1{
+header{
     display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 10vh;
+    align-items: center; 
+    justify-content: center;
+}
+h1{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-family: 'Sixtyfour';
 }
 main{
     text-align: center;
-    vertical-align: 100lvh;
+    vertical-align: 100vh;
     color: crimson;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }   
-header{
-    background-color: rgb(255, 255, 255);
-    padding-inline: 100%;
-    min-width: 100%;
-    margin-bottom: 25px;
-    vertical-align: 100px;
-     
-}
 .linha1{
     display: flex;
     align-items: center;
@@ -94,4 +99,33 @@ p{
     background-color: white;
     margin: auto 100px auto 100px;
     border: outset 2px black;
+}
+@media (max-width: 480px){
+    header{
+        padding: 0 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 10vh;
+    }
+    header h1{
+        color: rgb(255, 0, 0);
+        width: 100vw;
+        font-size:14px;
+       
+    }
+   .linha1, .linha2, .linha3{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imagens{
+        height: auto;
+        margin: 40px 2px 40px 1px;
+    }
+    .imagens img{
+        width: 250px;
+        height: 150px;
+        margin: 10px auto 10px auto;
+    }
+   
 }
