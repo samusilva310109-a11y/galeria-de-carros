@@ -5,5 +5,6 @@ A galeria tem por objetivo praticar a disposição de imagens dentro de uma pág
 
 ## Tecnologias utilizadas
 
-**HTML:** utilizado as tags img e o hyperlink a
+**HTML:** utilizado as tags **img** e o hyperlink **a**
+
 **CSS:** com foco na utilização da tecnologia display flex
